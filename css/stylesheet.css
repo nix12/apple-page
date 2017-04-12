@@ -1,15 +1,138 @@
 #navbar {
+	position: absolute;
 	display: block;
-	width: 980px;
+	width: 95%;
 	margin: auto;
 	height: 36px;
-	background-color: yellow;
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	border-radius: 4px;
+	color: white;
+	z-index: 9999;
 }
 #navbar ul li {
-	display: inline;
+	display: table;
 	list-style: none;
+	width: 110px;
+	float: left;
+	height: 36px;
+	text-align: center;
+	vertical-align: middle;
+	background-image: linear-gradient(to top, #8F8B8D 0%, #787878 50%, #5E5E5E 51%, #707070 100%);
+	border: 1px solid #5E5F60;
 }
 
-#navbar ul li a {
+#navbar a {
+	display: table-cell;
+	text-decoration: none;
+	vertical-align: middle;
+	color: white;
+	font-weight: 300;
+}
+
+#apple {
+	background-image: url(../images/apple_logo.png);
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+#search {
+	position: relative;
+	top: 8px;
+	left: 2px;
+	display: table-cell;
+	width: 70px;
+	height: 10px;
+	border: none;
+	background-color: rgba(255,255,255,.1);
+	box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+	border-radius: 12px;
+	vertical-align: middle;
+}
+
+#billboard {
+	width: 100%;
+	height: 700px;
+	background: url(../images/your_verse_hero.jpeg) no-repeat center -768px;
+	display: block;
+	border-spacing: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+header {
+	position: relative;
+	top: 13%;
+	text-align: center;
+}
+
+#your_verse {
+	margin: 30px;
+	height: 32px;
+	overflow: hidden;
+}
+
+#promos {
+	position: absolute;
+	top: 98%;
+	left: 0;
+	right: 0;
+}
+
+#promos {
+	margin-left: -50px;
+	overflow: hidden;
+}
+
+#promos ul li{
+	display: inline;
+	list-style: none;
+	float: left;
+	width: 25%;
+}
+
+#promos img {
+	min-width: 100%;
+}
+
+footer {
+	position: absolute;
+	top: 150%;
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	color: #6e6e6e;
+	width: 100%;
+}
+
+#policy {
+	display: inline;
+	float: left;
+}
+
+#policy p {
 	display: inline-block;
+	margin: 0;
+}
+
+#communications {
+	display: inline;
+	float: right;
+}
+
+#communications ul {
+	margin-left: -30px;
+	display: inline;
+}
+
+#communications ul li {
+	display: inline;
+	list-style: none;
+	float: left;
+	margin: 2px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #08c;
 }
